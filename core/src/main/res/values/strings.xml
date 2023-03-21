@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_vehicle_complaint_report">Laporan Keluhan Kendaraan</string>
+    <string name="title_user_fullname">Fakhri Khairi</string>
+    <string name="title_complaint_report">Laporan Keluhan</string>
+    <string name="title_complaint_note">Catatan Keluhan :</string>
+    <string name="title_complaint_report_form">Form Laporan Keluhan</string>
+    <string name="title_complaint_document">Dokumen Laporan</string>
+    
+    <string name="label_create_new_complaint_report">Buat Laporan Keluhan Baru</string>
+    <string name="label_complaint_note">catatan keluhan</string>
+    <string name="label_take_picture">Ambil Foto</string>
+    <string name="label_send_report">Kirim Laporan</string>
+</resources>

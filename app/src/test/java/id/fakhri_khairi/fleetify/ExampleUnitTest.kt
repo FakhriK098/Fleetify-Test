@@ -1,4 +1,4 @@
-package id.fakhri_khairi.skeleton
+package id.fakhri_khairi.fleetify
 
 import org.junit.Test
 

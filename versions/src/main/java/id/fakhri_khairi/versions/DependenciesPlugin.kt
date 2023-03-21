@@ -49,6 +49,14 @@ class DependenciesPlugin : Plugin<Project> {
         const val lottie = "com.airbnb.android:lottie:5.1.1"
         const val shimmer = "com.facebook.shimmer:shimmer:0.5.0"
 
+        private const val cameraxVersion = "1.1.0-beta01"
+        const val cameraCore = "androidx.camera:camera-core:$cameraxVersion"
+        const val camera2 = "androidx.camera:camera-camera2:$cameraxVersion"
+        const val cameraLifecycle = "androidx.camera:camera-lifecycle:$cameraxVersion"
+        const val cameraView = "androidx.camera:camera-view:$cameraxVersion"
+        const val guava = "com.google.guava:guava:29.0-android"
+        const val easyImage = "com.github.jkwiecien:EasyImage:3.2.0"
+
         // Test
         private const val testCoreVersion = "1.4.0"
         private const val jUnitVersion = "1.1.3"

@@ -1,8 +1,6 @@
 
-package id.fakhri_khairi.skeleton
+package id.fakhri_khairi.fleetify
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import androidx.multidex.BuildConfig
 import androidx.multidex.MultiDexApplication
 import dagger.hilt.android.HiltAndroidApp

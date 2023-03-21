@@ -50,6 +50,7 @@ android {
 repositories {
     google()
     mavenCentral()
+    maven(url = uri("https://jitpack.io"))
 }
 
 dependencies {
@@ -69,6 +70,12 @@ dependencies {
     api(DependenciesPlugin.coil)
     api(DependenciesPlugin.lottie)
     api(DependenciesPlugin.shimmer)
+    api(DependenciesPlugin.easyImage)
+    api(DependenciesPlugin.cameraCore)
+    api(DependenciesPlugin.camera2)
+    api(DependenciesPlugin.cameraView)
+    api(DependenciesPlugin.cameraLifecycle)
+    api(DependenciesPlugin.guava)
 
     testApi(DependenciesPlugin.jUnit)
     testApi(DependenciesPlugin.mockk)

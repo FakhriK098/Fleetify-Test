@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="25dp"
+            android:backgroundTint="@color/yellow_FFF438"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_report_problem_24"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/title_complaint_report"
+            style="@style/TextViewBlack.Size14.Bold"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="start"
+            app:layout_constraintStart_toEndOf="@id/cvReport"
+            app:layout_constraintEnd_toStartOf="@id/tvReportDate"
+            app:layout_constraintTop_toTopOf="@id/cvReport"/>
+        
+        <TextView
+            android:id="@+id/tvReportId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/TextViewGrey.Size12"
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintStart_toEndOf="@id/cvReport"
+            app:layout_constraintBottom_toBottomOf="@id/cvReport"
+            app:layout_constraintEnd_toStartOf="@+id/cvReportStatus"/>
+
+        <TextView
+            android:id="@+id/tvReportDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextViewBlack.Size12"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/cvReport"
+            app:layout_constraintStart_toEndOf="@id/tvTitle"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvReportStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/yellow_FFF438"
+            app:cardCornerRadius="8dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/cvReport">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="4dp"
+                android:paddingHorizontal="8dp">
+
+                <TextView
+                    android:id="@+id/tvReportStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextViewWhite.Size12.Bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/mdOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvReport"/>
+
+        <ImageView
+            android:id="@+id/ivCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_car"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mdOne"/>
+        
+        <TextView
+            android:id="@+id/tvVehicleName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/TextViewBlack.Size12.Bold"
+            android:layout_marginHorizontal="8dp"
+            android:gravity="start"
+            app:layout_constraintStart_toEndOf="@id/ivCar"
+            app:layout_constraintTop_toTopOf="@id/ivCar"
+            app:layout_constraintBottom_toBottomOf="@id/ivCar"
+            app:layout_constraintEnd_toStartOf="@id/cvVehicleId"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvVehicleId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ivCar"
+            app:layout_constraintBottom_toBottomOf="@id/ivCar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/tvVehicleId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextViewBlack.Size14"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <ImageView
+            android:id="@+id/ivUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_user"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivCar"/>
+
+        <TextView
+            android:id="@+id/tvReportBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextViewBlack.Size12.Bold"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="start"
+            app:layout_constraintStart_toEndOf="@id/ivUser"
+            app:layout_constraintTop_toTopOf="@id/ivUser"
+            app:layout_constraintBottom_toBottomOf="@id/ivUser"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/mdTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivUser"/>
+
+        <ImageView
+            android:id="@+id/ivNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_note"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mdTwo"/>
+
+        <TextView
+            android:id="@+id/tvComplaintNote"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/TextViewBlack.Size12.Bold"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="start"
+            android:text="@string/title_complaint_note"
+            app:layout_constraintStart_toEndOf="@id/ivNote"
+            app:layout_constraintTop_toTopOf="@id/ivNote"
+            app:layout_constraintEnd_toStartOf="@id/cvReportImg"/>
+
+        <TextView
+            android:id="@+id/tvComplaintNoteValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextViewBlack.Size12"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="start"
+            android:lineSpacingExtra="4sp"
+            app:layout_constraintStart_toEndOf="@id/ivNote"
+            app:layout_constraintTop_toBottomOf="@id/tvComplaintNote"
+            app:layout_constraintEnd_toStartOf="@id/cvReportImg"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvReportImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ivNote">
+            
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               
+               <ImageView
+                   android:id="@+id/ivReportImg"
+                   android:layout_width="72dp"
+                   android:layout_height="72dp"
+                   android:src="@drawable/ic_image_24"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintBottom_toBottomOf="parent"/>
+               
+           </androidx.constraintlayout.widget.ConstraintLayout> 
+            
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

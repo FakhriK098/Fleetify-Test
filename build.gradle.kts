@@ -14,7 +14,7 @@ buildscript {
         val hiltGradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:2.40.5"
         val detektGradlePlugin = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:1.19.0"
 
-        classpath(androidToolsBuildGradle)
+        classpath("com.android.tools.build:gradle:7.4.2")
         classpath(kotlinGradlePlugin)
         classpath(hiltGradlePlugin)
         classpath(detektGradlePlugin)

@@ -1,4 +1,4 @@
-package id.fakhri_khairi.skeleton
+package id.fakhri_khairi.fleetify
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
