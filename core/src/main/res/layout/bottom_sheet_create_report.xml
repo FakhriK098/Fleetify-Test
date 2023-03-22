@@ -18,7 +18,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="4dp">
+            android:padding="8dp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -45,6 +45,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/cvReport"
         app:layout_constraintBottom_toBottomOf="@id/cvReport"/>
+
+    <include
+        android:id="@+id/icSkeleton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvReport"
+        layout="@layout/skeleton_report_form"/>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cvCurrentDate"

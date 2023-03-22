@@ -26,12 +26,12 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="4dp">
+                android:padding="8dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_report_problem_24"
+                    android:src="@drawable/ic_report_problem_32"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -77,11 +77,12 @@
             android:id="@+id/cvReportStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/yellow_FFF438"
+            android:backgroundTint="@color/blue_353050"
             app:cardCornerRadius="8dp"
             android:layout_marginEnd="20dp"
+            android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="@id/cvReport">
+            app:layout_constraintTop_toBottomOf="@+id/tvReportDate">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
@@ -110,7 +111,7 @@
             android:layout_marginTop="10dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/cvReport"/>
+            app:layout_constraintTop_toBottomOf="@id/cvReportStatus"/>
 
         <ImageView
             android:id="@+id/ivCar"
@@ -177,7 +178,7 @@
 
         <TextView
             android:id="@+id/tvReportBy"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             style="@style/TextViewBlack.Size12.Bold"
             android:layout_marginHorizontal="10dp"
@@ -220,7 +221,7 @@
 
         <TextView
             android:id="@+id/tvComplaintNoteValue"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             style="@style/TextViewBlack.Size12"
             android:layout_marginHorizontal="10dp"
@@ -236,6 +237,8 @@
             android:layout_height="wrap_content"
             app:cardCornerRadius="8dp"
             android:layout_marginEnd="20dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/grey_E0E0E0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/ivNote">
             

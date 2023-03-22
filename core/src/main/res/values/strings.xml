@@ -6,6 +6,7 @@
     <string name="title_complaint_note">Catatan Keluhan :</string>
     <string name="title_complaint_report_form">Form Laporan Keluhan</string>
     <string name="title_complaint_document">Dokumen Laporan</string>
+    <string name="title_waring_to_complete">Harap diIsi Semua</string>
     
     <string name="label_create_new_complaint_report">Buat Laporan Keluhan Baru</string>
     <string name="label_complaint_note">catatan keluhan</string>

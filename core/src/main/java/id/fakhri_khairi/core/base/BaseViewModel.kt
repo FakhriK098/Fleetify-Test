@@ -24,4 +24,12 @@ abstract class BaseViewModel<STATE, EVENT>(
 
     protected val adaptiveScope: CoroutineScope
         get() = viewModelScope + coroutineContext
+
+    protected suspend fun sendEvent(event: EVENT) {
+        eventChannel.send(event)
+    }
+
+    protected suspend fun emitState(state: STATE) {
+        mutableState.emit(state)
+    }
 }
